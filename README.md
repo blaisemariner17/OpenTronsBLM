@@ -28,7 +28,9 @@ You will also need the OpenTrons software: https://opentrons.com/ot-app/
 1. Create an input comma-separated values file (.csv) that contains the source well, destination well, water volume, and dna volume information needed to run this protocol. The appropriate template for doing so is provided in the input_csv.csv in this repository. Do not change the column names in the first row of this file.
 
 3. Open the Jupyter Notebook file (Generate_dictionaries_for_pooling-240208.ipynb) and follow the instructions. When complete, copy the information at the very bottom. This is to be pasted into the OT-2 protocol python file. 
+
   Example copy/paste output of the Jupyter Notebook file from the input_csv.csv provided:
+
     source_well_to_destination_well_dictionary = {'A1': 'B1', 'B2': 'C2', 'C3': 'D3', 'D4': 'E4', 'E5': 'F5'}
     water_addition_dictionary =  {'B1': '0', 'C2': '5', 'D3': '10', 'E4': '24', 'F5': '26'}
     DNA_addition_dictionary =  {'A1': '26', 'B2': '21', 'C3': '16', 'D4': '2', 'E5': '0'}
