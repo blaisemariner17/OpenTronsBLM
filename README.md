@@ -4,7 +4,7 @@ Resource for the OpenTrons OT-2 robot in the SMACK lab (smack-lab.com)
 ### Terms and definitions: 
   <ins>**OT-2 Python protocol file**</ins> - the python file (.py) that is to be imported into the OpenTrons OT-2 robot.
 
-  <ins>**Jupyter Notebook file**</ins> - the Jupyter Notebook file (.ipynb) that is to be used to generate the interpretable Python dictionaries variables that are to be pasted into the OT-2 Python protocol file.
+  <ins>**Jupyter Notebook file**</ins> - the Jupyter Notebook file (.ipynb) that is to be used to generate the interpretable Python dictionary variables that are to be pasted into the OT-2 Python protocol file.
 
   <ins>**source plate** </ins> - the plate that contains the unnormalized DNA.
 
