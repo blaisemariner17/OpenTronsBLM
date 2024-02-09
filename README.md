@@ -4,7 +4,7 @@ Resource for the OpenTrons OT-2 robot in the SMACK lab (smack-lab.com)
 ### Terms and definitions: 
   <ins>**OT-2 Python protocol file**</ins> - the python file (.py) that is to be imported into the OpenTrons OT-2 robot.
 
-  <ins>**Jupyter Notebook file**</ins> - the Jupyther Notebook file (.ipynb) that is to be used to generate the interpretable python dictionaries variables that are to be pasted into the OT-2 Python protocol file.
+  <ins>**Jupyter Notebook file**</ins> - the Jupyter Notebook file (.ipynb) that is to be used to generate the interpretable Python dictionaries variables that are to be pasted into the OT-2 Python protocol file.
 
   <ins>**source plate** </ins> - the plate that contains the unnormalized DNA.
 
@@ -22,7 +22,8 @@ Resource for the OpenTrons OT-2 robot in the SMACK lab (smack-lab.com)
 This is a protocol designed for the use of normalizing DNA that is to be used for sequencing. Different volumes can be used for water, dna, and the destination well can be edited. 
 ## Standard operating procedure for Normalization Protocol
 Prereq: 
-Jupyter noteboooks needs to be installed on the computer that is to be connected to the OpenTrons OT-2: https://jupyter.org/install
+Jupyter Noteboooks needs to be installed on the computer that is to be connected to the OpenTrons OT-2: https://jupyter.org/install
+
 You will also need the OpenTrons software: https://opentrons.com/ot-app/
 
 1. Create an input comma-separated values file (.csv) that contains the source well, destination well, water volume, and dna volume information needed to run this protocol. The appropriate template for doing so is provided in the input_csv.csv in this repository. Do not change the column names in the first row of this file.
