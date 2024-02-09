@@ -20,7 +20,7 @@ Resource for the OpenTrons OT-2 robot in the SMACK lab (smack-lab.com)
 
 # Normalization
 This is a protocol designed for the use of normalizing DNA that is to be used for sequencing. Different volumes can be used for water, dna, and the destination well can be edited. 
-## Standard operating procedure for Normalization Protocol
+## Standard operating procedure for Normalization
 <ins>Prereq:</ins> 
 
 Jupyter Noteboooks needs to be installed on the computer that is to be connected to the OpenTrons OT-2: https://jupyter.org/install
