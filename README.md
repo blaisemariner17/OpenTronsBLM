@@ -4,19 +4,19 @@ Resource for the OpenTrons OT-2 robot in the SMACK lab (smack-lab.com)
 ## Terms and definitions: 
   <ins>**OT-2 Python protocol file**</ins> - the python file (.py) that is to be imported into the OpenTrons OT-2 robot.
 
-  **Jupyter Notebook file** - the Jupyther Notebook file (.ipynb) that is to be used to generate the interpretable python dictionaries variables that are to be pasted into the OT-2 Python protocol file.
+  <ins>**Jupyter Notebook file**</ins> - the Jupyther Notebook file (.ipynb) that is to be used to generate the interpretable python dictionaries variables that are to be pasted into the OT-2 Python protocol file.
 
-  **source plate** - the plate that contains the unnormalized DNA.
+  <ins>**source plate** </ins> - the plate that contains the unnormalized DNA.
 
-  **destination plate** - the plate that will contain the normalized DNA.
+  <ins>**destination plate** </ins> - the plate that will contain the normalized DNA.
 
-  **source well** - the source plate well containing the DNA that will be normalized.
+  <ins>**source well** </ins> - the source plate well containing the DNA that will be normalized.
 
-  **destination well** - the destination plate well that will contain the normalized DNA upon the completion of this protocol.
+  <ins>**destination well** </ins> - the destination plate well that will contain the normalized DNA upon the completion of this protocol.
 
-  **water volume** - the volume of water to be added to the destination well to obtain adequate normalization. Calculated by the user in conjunction with DNA volume.
+  <ins>**water volume** </ins> - the volume of water to be added to the destination well to obtain adequate normalization. Calculated by the user in conjunction with DNA volume.
 
-  **dna volume** - the volume of DNA that is to be added to the destination well to obtain adequate normalization. Calculated by the user in conjunction with water volume.
+  <ins>**dna volume** </ins> - the volume of DNA that is to be added to the destination well to obtain adequate normalization. Calculated by the user in conjunction with water volume.
 
 # Normalization
 This is a protocol designed for the use of normalizing DNA that is to be used for sequencing. Different volumes can be used for water, dna, and the destination well can be edited. 
