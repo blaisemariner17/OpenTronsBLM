@@ -31,7 +31,7 @@ You will also need the OpenTrons software: https://opentrons.com/ot-app/
 
 1. Create an input comma-separated values file (.csv) that contains the source well, destination well, water volume, and dna volume information needed to run this protocol. The appropriate template for doing so is provided in the input_csv.csv in this repository. Do not change the column names in the first row of this file.
 
-3. Open the Jupyter Notebook file (Generate_dictionaries_for_pooling-240208.ipynb) and follow the instructions. When complete, copy the information at the very bottom. This is to be pasted into the OT-2 protocol python file. 
+2. Open the Jupyter Notebook file (Generate_dictionaries_for_pooling-240208.ipynb) and follow the instructions. When complete, copy the information at the very bottom. This is to be pasted into the OT-2 protocol python file. 
 
   **Example copy/paste output of the Jupyter Notebook file from the input_csv.csv provided:**
 
@@ -39,12 +39,12 @@ You will also need the OpenTrons software: https://opentrons.com/ot-app/
     water_addition_dictionary =  {'B1': '0', 'C2': '5', 'D3': '10', 'E4': '24', 'F5': '26'}
     DNA_addition_dictionary =  {'A1': '26', 'B2': '21', 'C3': '16', 'D4': '2', 'E5': '0'}
 
-4. Paste the information into the "PASTE HERE" section in the OT-2 Python protocol file.
+3. Paste the information into the "PASTE HERE" section in the OT-2 Python protocol file.
 
-5. SAVE AS. Best practice is to add a date and your initials to the new file's name (e.g. normalization-with-csv-240208-blm.py).
+4. SAVE AS. Best practice is to add a date and your initials to the new file's name (e.g. normalization-with-csv-240208-blm.py).
 
-6. Import this file to the OpenTrons Software.
+5. Import this file to the OpenTrons Software.
 
-7. Run labware check to calibrate the machine.
+6. Run labware check to calibrate the machine.
 
-8. Start run! :)
+7. Start run! :)
