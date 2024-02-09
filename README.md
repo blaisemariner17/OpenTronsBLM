@@ -27,6 +27,8 @@ Jupyter Noteboooks needs to be installed on the computer that is to be connected
 
 You will also need the OpenTrons software: https://opentrons.com/ot-app/
 
+<ins>Protocol:</ins>
+
 1. Create an input comma-separated values file (.csv) that contains the source well, destination well, water volume, and dna volume information needed to run this protocol. The appropriate template for doing so is provided in the input_csv.csv in this repository. Do not change the column names in the first row of this file.
 
 3. Open the Jupyter Notebook file (Generate_dictionaries_for_pooling-240208.ipynb) and follow the instructions. When complete, copy the information at the very bottom. This is to be pasted into the OT-2 protocol python file. 
