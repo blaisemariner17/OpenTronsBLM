@@ -1,7 +1,7 @@
 # OpenTronsOT2SMACK
 Resource for the OpenTrons OT-2 robot in the SMACK lab (smack-lab.com)
 
-## Terms and definitions: 
+### Terms and definitions: 
   <ins>**OT-2 Python protocol file**</ins> - the python file (.py) that is to be imported into the OpenTrons OT-2 robot.
 
   <ins>**Jupyter Notebook file**</ins> - the Jupyther Notebook file (.ipynb) that is to be used to generate the interpretable python dictionaries variables that are to be pasted into the OT-2 Python protocol file.
