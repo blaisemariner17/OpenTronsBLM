@@ -8,9 +8,17 @@ metadata = {
 def run(ctx):
     ###Using a csv to define the water and dna amounts: https://docs.opentrons.com/ot1/examples.html
     #see input_csv.csv for formatting
+
+    ##############################################
+    ################PASTE HERE####################
+    ##############################################
     source_well_to_destination_well_dictionary = {}
     water_addition_dictionary = {}
     DNA_addition_dictionary = {}
+    ###############################################
+    ###############################################
+    ###############################################
+
     with open('/home/blaise/blaisework-SMACK/PROJECTS/Active/3_opentrons/2024-02-07-writing-my-own-script/input_csv.csv') as my_file:
             list_elements = my_file.read().splitlines()
             if list_elements[0] == 'source_well,destination_well,water_volume,dna_volume':
