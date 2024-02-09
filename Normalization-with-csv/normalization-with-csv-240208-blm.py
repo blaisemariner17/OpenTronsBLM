@@ -9,17 +9,16 @@ def run(ctx):
     ###Using a csv to define the water and dna amounts: https://docs.opentrons.com/ot1/examples.html
     #see input_csv.csv for formatting
 
-    ##############################################################
-    ############### PASTE BELOW THESE HASHTAGS ###################
-    ### (see normalization-with-csv-240208-blm.py for example) ###
-    ##############################################################
-
-    #PASTE HERE
-
+    ##############################################
+    ############### PASTE HERE ###################
+    ##############################################
+    source_well_to_destination_well_dictionary = {'A1': 'B1', 'B2': 'C2', 'C3': 'D3', 'D4': 'E4', 'E5': 'F5'}
+    water_addition_dictionary =  {'B1': '0', 'C2': '5', 'D3': '10', 'E4': '24', 'F5': '26'}
+    DNA_addition_dictionary =  {'A1': '26', 'B2': '21', 'C3': '16', 'D4': '2', 'E5': '0'}
     #Python is white-space sensitive, it is essential that only one single tab precedes these variables.
-    ##############################################################
-    ##############################################################
-    ##############################################################
+    ###############################################
+    ###############################################
+    ###############################################
 
     with open('/home/blaise/blaisework-SMACK/PROJECTS/Active/3_opentrons/2024-02-07-writing-my-own-script/input_csv.csv') as my_file:
             list_elements = my_file.read().splitlines()
