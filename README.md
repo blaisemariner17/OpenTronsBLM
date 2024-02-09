@@ -29,7 +29,7 @@ You will also need the OpenTrons software: https://opentrons.com/ot-app/
 
 3. Open the Jupyter Notebook file (Generate_dictionaries_for_pooling-240208.ipynb) and follow the instructions. When complete, copy the information at the very bottom. This is to be pasted into the OT-2 protocol python file. 
 
-  Example copy/paste output of the Jupyter Notebook file from the input_csv.csv provided:
+  **Example copy/paste output of the Jupyter Notebook file from the input_csv.csv provided:**
 
     source_well_to_destination_well_dictionary = {'A1': 'B1', 'B2': 'C2', 'C3': 'D3', 'D4': 'E4', 'E5': 'F5'}
     water_addition_dictionary =  {'B1': '0', 'C2': '5', 'D3': '10', 'E4': '24', 'F5': '26'}
