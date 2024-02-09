@@ -1,14 +1,7 @@
-# OpenTronsBLM
-for opentrons ot-2 software use in the SMACK lab (smack-lab.com)
-# Normalization
-This is a protocol designed for the use of normalizing DNA that is to be used for sequencing. Different volumes can be used for water, dna, and the destination well can be edited. 
-## Standard operating procedure for Normalization Protocol
-Prereq: 
-Jupyter noteboooks needs to be installed on the computer that is to be connected to the OpenTrons OT-2: https://jupyter.org/install
-You will also need the OpenTrons software: https://opentrons.com/ot-app/
+# OpenTronsOT2SMACK
+Resource for the OpenTrons OT-2 robot in the SMACK lab (smack-lab.com)
 
-1. Create an input comma-separated values file (.csv) that contains the source well, destination well, water volume, and dna volume information needed to run this protocol. The appropriate template for doing so is provided in the input_csv.csv in this repository. Do not change the column names in the first row of this file.
-
+## Terms and definitions: 
   **OT-2 Python protocol file** - the python file (.py) that is to be imported into the OpenTrons OT-2 robot.
 
   **Jupyter Notebook file** - the Jupyther Notebook file (.ipynb) that is to be used to generate the interpretable python dictionaries variables that are to be pasted into the OT-2 Python protocol file.
@@ -23,7 +16,16 @@ You will also need the OpenTrons software: https://opentrons.com/ot-app/
 
   **water volume** - the volume of water to be added to the destination well to obtain adequate normalization. Calculated by the user in conjunction with DNA volume.
 
-  *dna volume* - the volume of DNA that is to be added to the destination well to obtain adequate normalization. Calculated by the user in conjunction with water volume.
+  **dna volume** - the volume of DNA that is to be added to the destination well to obtain adequate normalization. Calculated by the user in conjunction with water volume.
+
+# Normalization
+This is a protocol designed for the use of normalizing DNA that is to be used for sequencing. Different volumes can be used for water, dna, and the destination well can be edited. 
+## Standard operating procedure for Normalization Protocol
+Prereq: 
+Jupyter noteboooks needs to be installed on the computer that is to be connected to the OpenTrons OT-2: https://jupyter.org/install
+You will also need the OpenTrons software: https://opentrons.com/ot-app/
+
+1. Create an input comma-separated values file (.csv) that contains the source well, destination well, water volume, and dna volume information needed to run this protocol. The appropriate template for doing so is provided in the input_csv.csv in this repository. Do not change the column names in the first row of this file.
 
 3. Open the Jupyter Notebook file (Generate_dictionaries_for_pooling-240208.ipynb) and follow the instructions. When complete, copy the information at the very bottom. This is to be pasted into the OT-2 protocol python file. 
   Example copy/paste output of the Jupyter Notebook file from the input_csv.csv provided:
