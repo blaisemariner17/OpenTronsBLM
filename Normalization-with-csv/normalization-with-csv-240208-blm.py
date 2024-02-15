@@ -14,9 +14,9 @@ def run(ctx):
     ### (see normalization-with-csv-240208-blm.py for example) ###
     ##############################################################
 
-	source_well_to_destination_well_dictionary = {'A1': 'A1', 'B2': 'B2', 'C3': 'C3', 'D4': 'D4', 'E5': 'E5'}
-	water_addition_dictionary =  {'A1': '0', 'B2': '5', 'C3': '10', 'D4': '24', 'E5': '26'}
-	DNA_addition_dictionary =  {'A1': '26', 'B2': '21', 'C3': '16', 'D4': '2', 'E5': '0'}
+    source_well_to_destination_well_dictionary = {'A1': 'A1', 'B2': 'B2', 'C3': 'C3', 'D4': 'D4', 'E5': 'E5'}
+    water_addition_dictionary =  {'A1': '0', 'B2': '5', 'C3': '10', 'D4': '24', 'E5': '26'}
+    DNA_addition_dictionary =  {'A1': '26', 'B2': '21', 'C3': '16', 'D4': '2', 'E5': '0'}
 
 
     #Python is white-space sensitive, it is essential that only one single tab precedes these variables.
