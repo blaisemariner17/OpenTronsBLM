@@ -14,7 +14,7 @@ def run(ctx):
     ### (see normalization-with-csv-240208-blm.py for example) ###
     ##############################################################
 
-    source_well_to_destination_well_dictionary = {'A1': 'B1', 'B2': 'C2', 'C3': 'D3', 'D4': 'E4', 'E5': 'F5'}
+    source_well_to_destination_well_dictionary = {'A1': 'A1', 'B2': 'B2', 'C3': 'C3', 'D4': 'D4', 'E5': 'E5'}
     water_addition_dictionary =  {'B1': '0', 'C2': '5', 'D3': '10', 'E4': '24', 'F5': '26'}
     DNA_addition_dictionary =  {'A1': '26', 'B2': '21', 'C3': '16', 'D4': '2', 'E5': '0'}
 
@@ -34,7 +34,7 @@ def run(ctx):
     tiprack_20_1 = ctx.load_labware("opentrons_96_filtertiprack_20ul", 11)
     tiprack_20_2 = ctx.load_labware("opentrons_96_filtertiprack_20ul", 8)
     water_container = ctx.load_labware('agilent_1_reservoir_290ml', 5).wells()[0]
-    source_plate = ctx.load_labware("biorad_96_wellplate_200ul_pcr", 3)
+    source_plate = ctx.load_labware("nest_96_wellplate_200ul_flat", 3)
     destination_plate = ctx.load_labware("biorad_96_wellplate_200ul_pcr", 6)
 
     #the right pipette is 20ul and the left one is 200ul
