@@ -31,7 +31,7 @@ def run(ctx):
     tiprack_20_1 = ctx.load_labware("opentrons_96_filtertiprack_20ul", 11)
     tiprack_20_2 = ctx.load_labware("opentrons_96_filtertiprack_20ul", 8)
     water_container = ctx.load_labware('agilent_1_reservoir_290ml', 5).wells()[0]
-    source_plate = ctx.load_labware("nest_96_wellplate_200ul_flat", 3)
+    source_plate = ctx.load_labware("biorad_96_wellplate_200ul_pcr", 3)
     destination_plate = ctx.load_labware("biorad_96_wellplate_200ul_pcr", 6)
 
     #the right pipette is 20ul and the left one is 200ul
