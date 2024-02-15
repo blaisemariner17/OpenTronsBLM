@@ -61,8 +61,8 @@ def run(ctx):
     tiprack_20_1 = ctx.load_labware("opentrons_96_filtertiprack_20ul", 11)
     tiprack_20_2 = ctx.load_labware("opentrons_96_filtertiprack_20ul", 8)
     water_container = ctx.load_labware('agilent_1_reservoir_290ml', 5).wells()[0]
-    source_plate = ctx.load_labware("nest_96_wellplate_200ul_flat", 3)
-    destination_plate = ctx.load_labware("nest_96_wellplate_200ul_flat", 6)
+    source_plate = ctx.load_labware("biorad_96_wellplate_200ul_pcr", 3)
+    destination_plate = ctx.load_labware("biorad_96_wellplate_200ul_pcr", 6)
     
     #first, the water step-- we only need one tip for this so I will pick up the tip before the loop and then drop it after the loop
     # this loop gets water from the water_container and dispenses it into the destination_plate wells
