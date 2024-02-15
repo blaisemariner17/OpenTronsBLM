@@ -39,13 +39,6 @@ def run(ctx):
     if len(source_well_to_destination_well_dictionary.keys()) == 0 or len(water_addition_dictionary.keys()) == 0 or len(DNA_addition_dictionary.keys()) == 0:
         raise ValueError("VALUES MISSING FROM CSV PLEASE TRY AGAIN")
 
-    #flow rates at ul/second
-    pipette_20.flow_rate.aspirate = 2
-    pipette_20.flow_rate.dispense = 2
-    pipette_20.flow_rate.blow_out = 2
-    pipette_200.flow_rate.aspirate = 2
-    pipette_200.flow_rate.dispense = 2
-    pipette_200.flow_rate.blow_out = 2
 
     #setting robot max speeds
     Default_max_speeds = {'X': 100, 'Y': 100, 'Z': 100, 'A': 100}
@@ -64,6 +57,14 @@ def run(ctx):
     pipette_20 = ctx.load_instrument('p20_single_gen2', 'right', tip_racks=[tiprack_20_1, tiprack_20_2])
     pipette_200 = ctx.load_instrument('p300_single_gen2', 'left', tip_racks=[tiprack_200_1, tiprack_200_2])
     
+    #flow rates at ul/second
+    pipette_20.flow_rate.aspirate = 2
+    pipette_20.flow_rate.dispense = 2
+    pipette_20.flow_rate.blow_out = 2
+    pipette_200.flow_rate.aspirate = 20
+    pipette_200.flow_rate.dispense = 20
+    pipette_200.flow_rate.blow_out = 20
+
     #first, the water step-- we only need one tip for this so I will pick up the tip before the loop and then drop it after the loop
     # this loop gets water from the water_container and dispenses it into the destination_plate wells
     pipette_200.pick_up_tip()

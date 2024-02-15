@@ -38,14 +38,6 @@ def run(ctx):
     if len(source_well_to_destination_well_dictionary.keys()) == 0 or len(water_addition_dictionary.keys()) == 0 or len(DNA_addition_dictionary.keys()) == 0:
         raise ValueError("VALUES MISSING FROM CSV PLEASE TRY AGAIN")
 
-    #flow rates at ul/second
-    pipette_20.flow_rate.aspirate = 2
-    pipette_20.flow_rate.dispense = 2
-    pipette_20.flow_rate.blow_out = 2
-    pipette_200.flow_rate.aspirate = 2
-    pipette_200.flow_rate.dispense = 2
-    pipette_200.flow_rate.blow_out = 2
-
     #setting robot max speeds
     Default_max_speeds = {'X': 100, 'Y': 100, 'Z': 100, 'A': 100}
 
@@ -68,6 +60,14 @@ def run(ctx):
     pipette_200.pick_up_tip()
     pipette_20.pick_up_tip()
 
+    #flow rates at ul/second
+    pipette_20.flow_rate.aspirate = 2
+    pipette_20.flow_rate.dispense = 2
+    pipette_20.flow_rate.blow_out = 2
+    pipette_200.flow_rate.aspirate = 2
+    pipette_200.flow_rate.dispense = 2
+    pipette_200.flow_rate.blow_out = 2
+    
     for destination_well_oi, water_volume_oi in water_addition_dictionary.items():
         water_volume_oi = float(water_volume_oi)
         if water_volume_oi < 2:
