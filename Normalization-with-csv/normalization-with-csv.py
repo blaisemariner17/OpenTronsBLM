@@ -39,10 +39,6 @@ def run(ctx):
     if len(source_well_to_destination_well_dictionary.keys()) == 0 or len(water_addition_dictionary.keys()) == 0 or len(DNA_addition_dictionary.keys()) == 0:
         raise ValueError("VALUES MISSING FROM CSV PLEASE TRY AGAIN")
 
-    #the right pipette is 20ul and the left one is 200ul
-    pipette_20 = ctx.load_instrument('p20_single_gen2', 'right', tip_racks=[tiprack_20_1, tiprack_20_2])
-    pipette_200 = ctx.load_instrument('p300_single_gen2', 'left', tip_racks=[tiprack_200_1, tiprack_200_2])
-
     #flow rates at ul/second
     pipette_20.flow_rate.aspirate = 2
     pipette_20.flow_rate.dispense = 2
@@ -63,6 +59,10 @@ def run(ctx):
     water_container = ctx.load_labware('agilent_1_reservoir_290ml', 5).wells()[0]
     source_plate = ctx.load_labware("biorad_96_wellplate_200ul_pcr", 3)
     destination_plate = ctx.load_labware("biorad_96_wellplate_200ul_pcr", 6)
+    
+    #the right pipette is 20ul and the left one is 200ul
+    pipette_20 = ctx.load_instrument('p20_single_gen2', 'right', tip_racks=[tiprack_20_1, tiprack_20_2])
+    pipette_200 = ctx.load_instrument('p300_single_gen2', 'left', tip_racks=[tiprack_200_1, tiprack_200_2])
     
     #first, the water step-- we only need one tip for this so I will pick up the tip before the loop and then drop it after the loop
     # this loop gets water from the water_container and dispenses it into the destination_plate wells
