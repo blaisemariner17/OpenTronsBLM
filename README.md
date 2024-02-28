@@ -23,7 +23,7 @@ This is a protocol designed for the use of normalizing DNA that is to be used fo
 ## Standard operating procedure for Normalization
 <ins>Prereq:</ins> 
 
-Jupyter Noteboooks needs to be installed on the computer that is to be connected to the OpenTrons OT-2: https://jupyter.org/install. If this is your first time installing jupyter notebooks, you may need to install python on your machine prior.
+Jupyter Noteboooks needs to be installed on the computer that will generate the python (.py) command script for the OT-2: https://jupyter.org/install. If this is your first time installing jupyter notebooks, you may need to install python on your machine prior.
 
 You will also need the OpenTrons software: https://opentrons.com/ot-app/
 
