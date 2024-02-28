@@ -15,6 +15,7 @@ def run(ctx):
     ##############################################################
 
     #PASTE HERE
+	#PYTHON IS WHITESPACE SENSITIVE SO YOU NEED ONE INDENT TAB TO THE LEFT OF YOUR PASTED DICTIONARIES
 
     #Python is white-space sensitive, it is essential that only one single tab precedes these variables.
     ##############################################################
