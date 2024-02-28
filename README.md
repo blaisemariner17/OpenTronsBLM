@@ -23,7 +23,7 @@ This is a protocol designed for the use of normalizing DNA that is to be used fo
 ## Standard operating procedure for Normalization
 <ins>Prereq:</ins> 
 
-Jupyter Noteboooks needs to be installed on the computer that is to be connected to the OpenTrons OT-2: https://jupyter.org/install
+Jupyter Noteboooks needs to be installed on the computer that is to be connected to the OpenTrons OT-2: https://jupyter.org/install. If this is your first time installing jupyter notebooks, you may need to install python on your machine prior.
 
 You will also need the OpenTrons software: https://opentrons.com/ot-app/
 
@@ -31,7 +31,7 @@ You will also need the OpenTrons software: https://opentrons.com/ot-app/
 
 1. Create an input comma-separated values file (.csv) that contains the source well, destination well, water volume, and dna volume information needed to run this protocol. The appropriate template for doing so is provided in the input_csv.csv in this repository. Do not change the column names in the first row of this file.
 
-2. Open the Jupyter Notebook file (Generate_dictionaries_for_pooling-240208.ipynb) and follow the instructions. When complete, copy the information at the very bottom. This is to be pasted into the OT-2 protocol python file. 
+2. Open the Jupyter Notebook file (Generate_dictionaries_for_pooling-240208.ipynb) and follow the instructions. You do this first by starting jupyter notebook first, then opening the file. To start jupyter notebook, open the terminal and type "jupyter notebook" and press enter. You can then open .ipynb files within the juper notebook interface. When complete, copy the information at the very bottom. This is to be pasted into the OT-2 protocol python file. 
 
   **Example copy/paste output of the Jupyter Notebook file generated from the input_csv.csv provided:**
 
