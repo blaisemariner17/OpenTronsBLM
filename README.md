@@ -45,6 +45,6 @@ You will also need the OpenTrons software: https://opentrons.com/ot-app/
 
 5. Import this file to the OpenTrons Software.
 
-6. Run labware check to calibrate the machine.
+6. Run labware check to calibrate the machine. THIS IS IMPORTANT-- on the DNA plate (where the DNA is in micronics tubes), which is in slot 3, the machine thinks it is a biorad 96 well plate. The calibration that works the best with getting all the sample out of the tubes especially if the volume is less than 50ul, is to calibrate the pipette 2.5mm lower than recommended at this step. I include a screenshot of the calibration parameters in this repo for your reference, too.
 
-7. Start run! :)
+8. Start run! :)
