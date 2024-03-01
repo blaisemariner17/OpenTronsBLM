@@ -40,12 +40,12 @@ def run(ctx):
     pipette_200 = ctx.load_instrument('p300_single_gen2', 'left', tip_racks=[tiprack_200_1, tiprack_200_2])
 
     #flow rates at ul/second
-    pipette_20.flow_rate.aspirate = 5
-    pipette_20.flow_rate.dispense = 5
-    pipette_20.flow_rate.blow_out = 5
-    pipette_200.flow_rate.aspirate = 50
-    pipette_200.flow_rate.dispense = 50
-    pipette_200.flow_rate.blow_out = 50
+    pipette_20.flow_rate.aspirate = 3
+    pipette_20.flow_rate.dispense = 3
+    pipette_20.flow_rate.blow_out = 3
+    pipette_200.flow_rate.aspirate = 20
+    pipette_200.flow_rate.dispense = 20
+    pipette_200.flow_rate.blow_out = 20
     
     #first, the water step-- we only need one tip for this so I will pick up the tip before the loop and then drop it after the loop
     # this loop gets water from the water_container and dispenses it into the destination_plate wells
